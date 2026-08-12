@@ -5,20 +5,20 @@
 class Shellroute < Formula
   desc "Residential proxy CLI"
   homepage "https://shellroute.com"
-  version "0.1.2"
+  version "0.1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/shellroute/shellroute-cli/releases/download/v0.1.2/shellroute_0.1.2_darwin_amd64_brew.tar.gz"
-      sha256 "3dfd7b092b8d70680bab6e86db0563fbf6e3656639623450afb423982512fb01"
+      url "https://github.com/shellroute/shellroute-cli/releases/download/v0.1.1/shellroute_0.1.1_darwin_amd64_brew.tar.gz"
+      sha256 "dab8834f0c90bdc34048ebe604d5667d6ac11e4fd664b73ad4a18f1bff4fab92"
 
       define_method(:install) do
         bin.install "shellroute"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/shellroute/shellroute-cli/releases/download/v0.1.2/shellroute_0.1.2_darwin_arm64_brew.tar.gz"
-      sha256 "a201b00af83d47d38d6ae6263cb8348e3409dd7a2b4b75dad328f891316c80d5"
+      url "https://github.com/shellroute/shellroute-cli/releases/download/v0.1.1/shellroute_0.1.1_darwin_arm64_brew.tar.gz"
+      sha256 "a5b088bb5d429b1ee4ad58c07e5c9b833a28b3768f75c0413d7d482c4b965c6e"
 
       define_method(:install) do
         bin.install "shellroute"
@@ -28,15 +28,15 @@ class Shellroute < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/shellroute/shellroute-cli/releases/download/v0.1.2/shellroute_0.1.2_linux_amd64_brew.tar.gz"
-      sha256 "d68c54e31b1665493ca83933255aec9fe0c0ef15bc1d1665569280467113f51d"
+      url "https://github.com/shellroute/shellroute-cli/releases/download/v0.1.1/shellroute_0.1.1_linux_amd64_brew.tar.gz"
+      sha256 "c94be6a44c5617a330f1f1bcde39d446f20fb39976c63f6b456cc7ea69eebdb5"
       define_method(:install) do
         bin.install "shellroute"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/shellroute/shellroute-cli/releases/download/v0.1.2/shellroute_0.1.2_linux_arm64_brew.tar.gz"
-      sha256 "a39f882a594b2e7c5b12f33fdf42d24108ea7715e430bfd17cf9a0366025c2c9"
+      url "https://github.com/shellroute/shellroute-cli/releases/download/v0.1.1/shellroute_0.1.1_linux_arm64_brew.tar.gz"
+      sha256 "6ff039f2f5f2346549e69589c2081b0e7244bf436f296550565a77558dafab9d"
       define_method(:install) do
         bin.install "shellroute"
       end
