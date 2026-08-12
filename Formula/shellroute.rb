@@ -10,7 +10,7 @@ class Shellroute < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/shellroute/shellroute-cli/releases/download/v0.1.1/shellroute_0.1.1_darwin_amd64_brew.tar.gz"
-      sha256 "5f3d1cab9849e0dee89f950a4f296e377a65c36983d31c3335e21cf1292e2382"
+      sha256 "d11f968b7f9dbd84ab11135f3979cfdca6f68592a573e7fa7663186cd7075fca"
 
       define_method(:install) do
         bin.install "shellroute"
@@ -18,7 +18,7 @@ class Shellroute < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/shellroute/shellroute-cli/releases/download/v0.1.1/shellroute_0.1.1_darwin_arm64_brew.tar.gz"
-      sha256 "e46fcd4ab9c85b8b4f9e6902de5cafacd94775e19c664f09bcc7f7003021cff6"
+      sha256 "5e570c59bfcc3d1a440edd69a3b837fc416be1a5fb9fd5828eb4b38b07ff2d91"
 
       define_method(:install) do
         bin.install "shellroute"
@@ -29,14 +29,14 @@ class Shellroute < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/shellroute/shellroute-cli/releases/download/v0.1.1/shellroute_0.1.1_linux_amd64_brew.tar.gz"
-      sha256 "613f34ddb82a072a11197edb2cce010247d0e5c2a29c8f1d1f019842dc45d5c7"
+      sha256 "35dfea5a9e0f8b97f7e298a2b80848e8bcb1c391adff6fcbe8805870be4ba13d"
       define_method(:install) do
         bin.install "shellroute"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/shellroute/shellroute-cli/releases/download/v0.1.1/shellroute_0.1.1_linux_arm64_brew.tar.gz"
-      sha256 "a075c5f257ba83da8dbff3f80b901f4dd868c713c967f0c65d30c91a28c25127"
+      sha256 "fc3b10e386fb55cd2f8a0cd6ccf0f262f46103266b966968e3b5eee0b7f03504"
       define_method(:install) do
         bin.install "shellroute"
       end
